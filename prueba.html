@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <script type="text/javascript">
+    //1,1,2,3,5,8,13,21...
+    function fibonacci(){
+        var fibo1=1, fibo2=1, pos=1,
+        num = parseInt(document.getElementById("numero").value);
+
+        var serie = [0,1];
+        var anterior = serie[serie.length-2];
+        var ultimo = serie[serie.length-1];
+        let nuevo = ultimo + anterior;
+        serie.push(nuevo);
+        for (let i=0; i<cedula.length()-1; i++){
+            numero3 = numero + numero2;
+            numero = numero2;
+            numero2 = numero3
+            if (numero3 % 2==0){
+                sumaPares = numero3 + numero3;
+            }
+            console.log(sumaPares);
+        }
+        return serie;
+    }
+    
+    </script>
+
+</head>
+<body>
+   <span>Introdusca el ultimo digito de cedula para comprobar si par o impar</span>
+   <input id="numero"/> 
+   <button onclick="fibonacci()">Calcular</button>
+</body>
+</html>
